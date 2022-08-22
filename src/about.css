@@ -1,0 +1,50 @@
+:root {
+    --dark-color: #4b4743;
+    --secondary-color: #9c9186;
+    --primary-color: #dbd2c9;
+    --white-color: #fff;
+
+    --shadow: 0 0 10px #dbd2c9,
+        0 0 20px #dbd2c9,
+        0 0 40px #dbd2c9,
+        0 0 80px #dbd2c9,
+        0 0 160px #dbd2c9;
+    --shadow-md: 5px 5px 3px #807467;
+    --shadow-sm: 5px 5px 3px #dbd2c9;
+}
+
+/* /////////////////////////////////////
+////////////// ABOUT ///////////////////
+//////////////////////////////////////*/
+
+.about {
+    min-width: 100%;
+    height: 100vh;
+}
+
+.about__aside {
+    width: 85vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
+.about__paragraph {
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 1.5rem;
+    line-height: 1.4;
+    color: var(--dark-color);
+    background-color: rgba(255, 255, 255, 0.182);
+    border-radius: .4rem;
+    box-shadow: var(--shadow-md);
+}
+
+.about__paragraph::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    text-shadow: var(--shadow);
+}

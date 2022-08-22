@@ -1,0 +1,225 @@
+:root {
+    --dark-color: #4b4743;
+    --secondary-color: #9c9186;
+    --primary-color: #dbd2c9;
+    --white-color: #fff;
+
+    --shadow: 0 0 10px #dbd2c9,
+                  0 0 20px #dbd2c9,
+                  0 0 40px #dbd2c9,
+                  0 0 80px #dbd2c9,
+                  0 0 160px #dbd2c9; 
+    --shadow-light:  0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff,
+            0 0 80px #fff,
+            0 0 160px #fff;
+    --shadow-md: 5px 5px 3px #807467;  
+    --shadow-sm: 5px 5px 3px #dbd2c9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    /* border: 2px solid red; */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 62.5%;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 2.7rem;
+    background-image: url(../img/bg/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.heading-1 {
+    font-size: 4.5rem;
+    position: relative;
+    color: transparent;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(54, 43, 12, 0.514));
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+.heading-1 span {
+    display: inline-block;
+    margin-top: .7rem;
+}
+
+@keyframes animate {
+    0%,18%,20%,50%,1%,60%,65%,1%,80%,90%,1%,92% {
+        color: #7c6433;
+        text-shadow: none;
+    }
+    18%,1%,20%,30%,50%,60%,65%,80%,90%,92%,100% {
+        color: var(--primary-color);
+        text-shadow: var(--shadow-md);
+    }
+}
+
+.heading-3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: var(--shadow-md);
+}
+
+.heading-3::first-letter {
+    margin-right: .1rem;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: var(--shadow-sm);
+}
+
+.heading-4 {
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--primary-color);
+    text-shadow: var(--shadow-md);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(54, 43, 12, 0.514));
+    animation: animate 5s linear infinite;
+}
+
+.heading-5 {
+    background: var(--secondary-color);
+    padding: .7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 1px;
+    border-top: 1px solid var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.heading-5::first-letter {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+/* /////////////////////////////////////
+//////////// NAVIGATION ////////////////
+//////////////////////////////////////*/
+
+.navigation {
+    display: none;
+    position: relative;
+}
+
+
+/* /////////////////////////////////////
+////////////// HEADER //////////////////
+//////////////////////////////////////*/
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    height: 5rem;
+    padding: 0 2rem 0 2rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar {
+    display: flex;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.header__list {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    color: var(--white-color);
+    text-shadow: var(--shadow-md);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.header__link:hover {
+    border-bottom: 4px solid var(--primary-color);
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+    text-shadow: var(--shadow-light);
+}
+
+/* /////////////////////////////////////
+//////////// SOCIAL MEDIA //////////////
+//////////////////////////////////////*/
+
+.social-media {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+}
+
+.social-media__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.social-media__list {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.social-media__link {
+    text-transform: capitalize;
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white-color);
+    text-shadow: var(--shadow);
+}
+
+.linkedin,
+.github,
+.ig {
+    font-size: 2rem;
+}
+
+/* /////////////////////////////////////
+/////////////// DATE ///////////////////
+//////////////////////////////////////*/
+
+.date {
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    bottom: 50%;
+    z-index: 999;
+}
+
+#date__caption {
+    writing-mode: vertical-lr;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-shadow: var(--shadow-md);
+}

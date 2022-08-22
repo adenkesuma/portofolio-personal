@@ -1,0 +1,69 @@
+/* /////////////////////////////////////
+////////////// SKILLS //////////////////
+//////////////////////////////////////*/
+
+.skills {
+    min-width: 100%;
+    height: 100vh;
+}
+
+.skills__box {
+    height: 80vh;
+    width: 85vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.skills__icons {
+    margin: 0 auto;
+    display: block;
+    float: left;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skill__icon {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    font-size: 3rem;
+    text-shadow: var(--shadow-md);
+}
+
+.icon-html {
+    color: #f6800a;
+}
+
+.icon-css {
+    color: #004cff;
+}
+
+.icon-sass {
+    color: #fe028d;
+}
+
+.icon-bootstrap {
+    color: #6a0677;
+}
+
+.icon-javascript {
+    color: #ffff00;
+}
+
+.icon-react {
+    color: #3dbbe5;
+}
+
+.icon-git {
+    color: rgb(255, 119, 0);
+}
+
+.icon-php {
+    color: #7a4078;
+}
+
+.icon-database {
+    color: #595353;
+}
